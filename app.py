@@ -10,6 +10,9 @@ svm_model = joblib.load('svm_model.pkl')
 # Title of the app
 st.title('Mammographic Mass Severity Prediction')
 
+st.subheader("Source Code Aplikasi")
+st.write("https://github.com/UmarMuchtar/datamining_uas_deploy")
+
 # Input fields for the features
 b_rads = st.selectbox('BI-RADS', [1, 2, 3, 4, 5])
 age = st.slider('Age', 10, 100, 50)
